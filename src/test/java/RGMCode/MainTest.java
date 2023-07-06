@@ -21,6 +21,16 @@ class MainTest {
 
     /* ********************Intermediate******************** */
 
+    // Intermediate - Aufgabe 2 - Test
+    @Test
+    void numberToStringTest(){
+        //given
+        int num = 1;
+        //when
+        String actual = Main.numberToString(num);
+        //then
+        assertEquals("Eins", actual);
+    }
 
 
 }
