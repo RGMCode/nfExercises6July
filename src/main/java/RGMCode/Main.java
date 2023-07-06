@@ -1,6 +1,8 @@
 package RGMCode;
 
+import java.text.NumberFormat;
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -17,8 +19,10 @@ public class Main {
         //backString();
 
         //moduloString();
-        ascNum();
+        //ascNum();
         //scanOutput();
+        //stringSplit();
+        //romeCon();
     }
 
     /* ***********************************Novice*********************************** */
@@ -75,7 +79,6 @@ public class Main {
         }
 
     }
-
 
     // Intermediate - Aufgabe 2
     // Schreibe eine Methode die zu einer einstelligen Zahl das
@@ -136,34 +139,6 @@ public class Main {
     // Schreibe ein Programm die Wörter vom Benutzer einliest (Scanner)
     // und diese in einem Array speichert.
     // -Gib vor jeder Eingabe jeweils die eingegebenen Wörter noch mal aus.
-    public static void scanOutput(){
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Gib ein Wort ein (\"exit\" zum Beenden): ");
-
-        String[] words = new String[100]; // Annahme: Maximal 100 Wörter
-        int count = 0; // Zählt die Anzahl der eingegebenen Wörter
-
-        String input = scan.nextLine();
-        while (!input.equals("exit")) {
-            words[count] = input;
-            count++;
-
-            // Ausgabe der bisher eingegebenen Wörter
-            System.out.println("Bisher eingegebene Wörter:");
-            for (int i = 0; i < count; i++) {
-                System.out.println(words[i]);
-            }
-
-            System.out.print("Gib ein Wort ein (\"exit\" zum Beenden): ");
-            input = scan.nextLine();
-        }
-
-        // Abschließende Ausgabe der eingegebenen Wörter
-        System.out.println("Eingegebene Wörter:");
-        for (int i = 0; i < count; i++) {
-            System.out.println(words[i]);
-        }
-    }
 
 
 
@@ -172,28 +147,37 @@ public class Main {
 
     // Expert - Aufgabe 1
     // Schreibe eine Methode die einen Eingabestring rückwärts ausgibt.
-    public static void backString(){
-        String abc = "abcde";
-        String cba = new StringBuffer(abc).reverse().toString();
+    public static String backString(String conString){
+        //String abc = "abcde";
+        String cba = new StringBuffer(conString).reverse().toString();
         System.out.println(cba);
+        return cba;
     }
 
 
     // Expert - Aufgabe 2
     // Gibt den folgenden Array aufsteigend sortiert aus: {6, 2, 8, 3, 9, 6}
-    public static void ascNum(){
-        int[] arrNum = {6, 2, 8, 3, 9, 6};
+    public static int[] ascNum(int[] checkArrNum){
+        int[] arrNum = checkArrNum;
         Arrays.sort(arrNum);
-        System.out.println(Arrays.toString(arrNum));
+        //System.out.println(Arrays.toString(arrNum));
+        return arrNum;
     }
 
 
     // Expert - Aufgabe 3
     // Schreibe eine Methode die einen String nach , separiert und als Array zurück gibt.
+    public static String stringSplit(String strToSplit){
+        String strSplit = "Ich mag Java gern";
+        String resStrSplit = strSplit.replaceAll("\\s", "");
+        //System.out.println(resStrSplit);
+        return resStrSplit;
+    }
 
 
     // Expert - Aufgabe 4
     // Schreibe eine Methode die Quersumme einer Ganzzahl berechnet.
+
 
 
     // Expert - Aufgabe 5
