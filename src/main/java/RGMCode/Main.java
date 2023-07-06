@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        /*returnName();
+        /*
+        returnName();
         System.out.println("------------------------");
         name5Times();
         System.out.println("------------------------");
         scannerMethode();
         System.out.println("------------------------");
-
          */
         arrZahlenwoerter();
 
