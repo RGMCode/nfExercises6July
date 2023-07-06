@@ -26,7 +26,7 @@ class MainTest {
 
     // Intermediate - Aufgabe 2 - Test
     @Test
-    void numberToStringTest1(){
+    void numberToStringTest1() {
         //given
         int num = 1;
         //when
@@ -34,8 +34,9 @@ class MainTest {
         //then
         assertEquals("Eins", actual);
     }
+
     @Test
-    void numberToStringTest2(){
+    void numberToStringTest2() {
         //given
         int num = 2;
         //when
@@ -43,8 +44,9 @@ class MainTest {
         //then
         assertEquals("Zwei", actual);
     }
+
     @Test
-    void numberToStringTest3(){
+    void numberToStringTest3() {
         //given
         int num = 3;
         //when
@@ -52,8 +54,9 @@ class MainTest {
         //then
         assertEquals("Drei", actual);
     }
+
     @Test
-    void numberToStringTest4(){
+    void numberToStringTest4() {
         //given
         int num = 4;
         //when
@@ -61,8 +64,9 @@ class MainTest {
         //then
         assertEquals("Vier", actual);
     }
+
     @Test
-    void numberToStringTest5(){
+    void numberToStringTest5() {
         //given
         int num = 5;
         //when
@@ -70,6 +74,7 @@ class MainTest {
         //then
         assertEquals("Fünf", actual);
     }
+
     @Test
     void numberToStringTest6() {
         //given
@@ -79,6 +84,7 @@ class MainTest {
         //then
         assertEquals("Sechs", actual);
     }
+
     @Test
     void numberToStringTest7() {
         //given
@@ -88,6 +94,7 @@ class MainTest {
         //then
         assertEquals("Sieben", actual);
     }
+
     @Test
     void numberToStringTest8() {
         //given
@@ -97,6 +104,7 @@ class MainTest {
         //then
         assertEquals("Acht", actual);
     }
+
     @Test
     void numberToStringTest9() {
         //given
@@ -106,6 +114,7 @@ class MainTest {
         //then
         assertEquals("Neun", actual);
     }
+
     @Test
     void numberToStringTest10() {
         //given
@@ -122,22 +131,21 @@ class MainTest {
     // Expert - Aufgabe 1
     // Schreibe eine Methode die einen Eingabestring rückwärts ausgibt.
     @Test
-    void reverseStringTest(){
+    void reverseStringTest() {
         //given
         String conString = "abcdefg";
         //when
         String actual = Main.backString(conString);
         String resString = "gfedcba";
         //then
-        assertEquals(resString,actual);
+        assertEquals(resString, actual);
     }
-
 
 
     // Expert - Aufgabe 2
     // Gibt den folgenden Array aufsteigend sortiert aus: {6, 2, 8, 3, 9, 6}
     @Test
-    void ascNumTest(){
+    void ascNumTest() {
         //given
         int[] checkArrNum = {6, 2, 8, 3, 9, 6};
         //when
@@ -148,11 +156,10 @@ class MainTest {
     }
 
 
-
     // Expert - Aufgabe 3
     // Schreibe eine Methode die einen String nach , separiert und als Array zurück gibt.
     @Test
-    void stringSplitTest(){
+    void stringSplitTest() {
         //given
         String strToSplit = "Ich mag Java gern";
         //when

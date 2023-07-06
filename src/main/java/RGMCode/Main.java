@@ -7,22 +7,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        /*
-        returnName();
-        System.out.println("------------------------");
-        name5Times();
-        System.out.println("------------------------");
-        scannerMethode();
-        System.out.println("------------------------");
-         */
+        //returnName();
+        //name5Times();
+        //scannerMethode();
         //arrZahlenwoerter();
-        //backString();
-
         //moduloString();
-        //ascNum();
-        //scanOutput();
-        //stringSplit();
-        //romeCon();
     }
 
     /* ***********************************Novice*********************************** */
@@ -74,7 +63,7 @@ public class Main {
                 "Vier", "Fünf", "Sechs",
                 "Sieben", "Acht", "Neun", "Zehn",};
 
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
             System.out.println(arr[i]);
         }
 
@@ -83,8 +72,8 @@ public class Main {
     // Intermediate - Aufgabe 2
     // Schreibe eine Methode die zu einer einstelligen Zahl das
     // entsprechende Zahlenwort ausgibt.
-    public static String numberToString(int num){
-        switch(num) {
+    public static String numberToString(int num) {
+        switch (num) {
             case 1:
                 return "Eins";
             case 2:
@@ -118,12 +107,12 @@ public class Main {
     // Zusatz
     // -Vor Zahlen die durch 3 und 5 Teilbar sind soll ein #$ stehen
 
-    public static void moduloString(){
+    public static void moduloString() {
         int modNum = 100;
-        for (int i = 0; i < modNum; i++){
-            if(i % 3 == 0 && i % 5 == 0){
+        for (int i = 0; i < modNum; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
                 System.out.println("#$" + i);
-            } else if (i % 3 == 0){
+            } else if (i % 3 == 0) {
                 System.out.println("#" + i);
             } else if (i % 5 == 0) {
                 System.out.println("$" + i);
@@ -147,7 +136,7 @@ public class Main {
 
     // Expert - Aufgabe 1
     // Schreibe eine Methode die einen Eingabestring rückwärts ausgibt.
-    public static String backString(String conString){
+    public static String backString(String conString) {
         //String abc = "abcde";
         String cba = new StringBuffer(conString).reverse().toString();
         System.out.println(cba);
@@ -157,7 +146,7 @@ public class Main {
 
     // Expert - Aufgabe 2
     // Gibt den folgenden Array aufsteigend sortiert aus: {6, 2, 8, 3, 9, 6}
-    public static int[] ascNum(int[] checkArrNum){
+    public static int[] ascNum(int[] checkArrNum) {
         int[] arrNum = checkArrNum;
         Arrays.sort(arrNum);
         //System.out.println(Arrays.toString(arrNum));
@@ -167,7 +156,7 @@ public class Main {
 
     // Expert - Aufgabe 3
     // Schreibe eine Methode die einen String nach , separiert und als Array zurück gibt.
-    public static String stringSplit(String strToSplit){
+    public static String stringSplit(String strToSplit) {
         String strSplit = "Ich mag Java gern";
         String resStrSplit = strSplit.replaceAll("\\s", "");
         //System.out.println(resStrSplit);
@@ -177,7 +166,6 @@ public class Main {
 
     // Expert - Aufgabe 4
     // Schreibe eine Methode die Quersumme einer Ganzzahl berechnet.
-
 
 
     // Expert - Aufgabe 5
