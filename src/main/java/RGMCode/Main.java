@@ -123,13 +123,10 @@ public class Main {
 
     }
 
-
     // Intermediate - Aufgabe 4
     // Schreibe ein Programm die Wörter vom Benutzer einliest (Scanner)
     // und diese in einem Array speichert.
     // -Gib vor jeder Eingabe jeweils die eingegebenen Wörter noch mal aus.
-
-
 
 
     /* ***********************************EXPERT*********************************** */
