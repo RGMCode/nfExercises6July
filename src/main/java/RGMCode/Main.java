@@ -56,7 +56,7 @@ public class Main {
 
     }
 
-        /* ***********************************Intermediate*********************************** */
+    /* ***********************************Intermediate*********************************** */
 
     // Intermediate - Aufgabe 1
     // Fülle ein String-Array mit den Zahlenwörtern "Eins" bis "Zehn"
