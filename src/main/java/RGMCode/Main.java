@@ -21,7 +21,6 @@ public class Main {
     public static void returnName() {
         String personName = "René";
         System.out.println(personName);
-
     }
 
     // Novice - Aufhabe 2
@@ -127,6 +126,20 @@ public class Main {
     // Schreibe ein Programm die Wörter vom Benutzer einliest (Scanner)
     // und diese in einem Array speichert.
     // -Gib vor jeder Eingabe jeweils die eingegebenen Wörter noch mal aus.
+    public static void scanArr () {
+        Scanner scan = new Scanner (System.in);
+        String[] names = {}; //0
+        while (true) {
+            System.out.println(Arrays.toString(names));
+            System.out.println("Bitte geben Sie einen weiteren Namen ein");
+            String newName = scan.nextLine();
+            if (newName.equals("q") || newName.equals("quit")){
+                break;
+            }
+            names = Arrays.copyOf(names, names.length + 1);
+            names[names.length - 1] = newName;
+        }
+    }
 
 
     /* ***********************************EXPERT*********************************** */
