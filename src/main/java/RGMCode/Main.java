@@ -176,7 +176,13 @@ public class Main {
 
     // Expert - Aufgabe 4
     // Schreibe eine Methode die Quersumme einer Ganzzahl berechnet.
-
+    public static int checkQuerSum(int number) {
+        if (number == 0) {
+            return 0;
+        }
+        int lastNumber = number % 10;
+        return lastNumber + checkQuerSum(number / 10);
+    }
 
     // Expert - Aufgabe 5
     // Gib eine Ganzzahl (1-100) als römische Zahl aus (12 = XII)

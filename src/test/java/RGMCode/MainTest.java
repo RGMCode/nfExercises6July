@@ -168,4 +168,24 @@ class MainTest {
         //then
         assertEquals(resStrToSplit, act);
     }
+
+    @Test
+    void checkQuerSum789() {
+        assertEquals(24, Main.checkQuerSum(789));
+    }
+
+    @Test
+    void checkQuerSum0() {
+        assertEquals(0, Main.checkQuerSum(0));
+    }
+
+    @Test
+    void checkQuerSum1() {
+        assertEquals(1, Main.checkQuerSum(1));
+    }
+
+    @Test
+    void checkSumNegativeNumbers() {
+        assertEquals(-6, Main.checkQuerSum(-123));
+    }
 }
