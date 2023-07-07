@@ -104,7 +104,7 @@ public class Main {
     // Schreibe ein Programm das die Zahlen 1-100 ausgibt, aber:
     // -Vor Zahlen die durch 3 teilbar sind (modulo) soll ein # stehen
     // -Vor Zahlen die durch 5 teilbar sind soll ein $ stehen
-    // Zusatz
+    // Zusatz:
     // -Vor Zahlen die durch 3 und 5 Teilbar sind soll ein #$ stehen
 
     public static void moduloString() {
